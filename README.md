@@ -74,32 +74,42 @@ Error: Matrix a and b must have the same rows and cols.
 ![image](https://github.com/user-attachments/assets/d15336ac-2b55-405f-b7ff-068536ec86a6)
 
 ## 函数题目：
+* 矩阵的存储结构：使用二维数组存储元素。配合双重循环。
+
 ### add_matrix:
-* 思路:
+* 思路:先检查维度一致性，然后使用内外两层循环实现逐个元素相加。
 ![image](https://github.com/user-attachments/assets/76ba9340-3c4a-4687-bd64-787ca897ca99)
 
 ### sub_matrix:
+* 思路：先检查维度一致性，然后使用内外两层循环实现逐个元素相减。
 ![image](https://github.com/user-attachments/assets/8090287f-5f98-4fca-b3b9-ff548360a7b0)
 
 ### mul_matrix:
+* 思路：三重循环，新建一个二维数组存放结果，最内层循环实现乘积结果的存放。
 ![image](https://github.com/user-attachments/assets/e4fb49b5-5768-492e-b81a-b925d28b8b32)
 
 ### scale_matrix:
+* 思路：新建一个二维数组存放结果，内层循环实现乘积结果的存放。
 ![image](https://github.com/user-attachments/assets/156ad9c2-eeec-4c3c-978d-81a9e49e6b89)
 
 ### transpose_matrix:
+* 思路：新建一个二维数组存放结果，通过交换两个循环变量的位置，实现结果的存放。
 ![image](https://github.com/user-attachments/assets/3f73f918-1141-4c17-b7c3-cbaadfda256e)
 
 ### trace_matrix:
+* 思路：先判断矩阵是否行列数相等，再使用一个变量，结合循环存储对角线元素相加的结果。
 ![image](https://github.com/user-attachments/assets/8430ca28-5c1a-4c80-8992-74f4af5d6e4d)
 
 ### det_matrix:
+* 思路：使用高斯消元法，在临时矩阵上操作，保留原矩阵。当遇到主元为0时，向下查找非零行。
 ![image](https://github.com/user-attachments/assets/2ba4728a-8b41-4ebf-bf68-5a609bc04b21)
 
 ### inv_matrix:
+* 思路：使用四重嵌套循环，最内层循环动态跳过当前行列，构建余子矩阵。
 ![image](https://github.com/user-attachments/assets/769f4eb1-214c-4e3b-b99b-d3aa2af50f3e)
 
 ### rank_matrix:
+* 思路：优先处理左侧的列，跳过非零列，每消元成功一次，秩就加一。
 ![image](https://github.com/user-attachments/assets/401804dd-f972-4468-ac31-ae7e51f9e105)
 
 

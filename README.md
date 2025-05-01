@@ -1,4 +1,4 @@
-# algebra
+![image](https://github.com/user-attachments/assets/d92afd10-a4b8-4c0f-8366-c7c730e73aeb)![image](https://github.com/user-attachments/assets/8b6a7a0f-413a-4938-894a-b9d5ece1291c)# algebra
 硬件技术团队编程基础作业
 ## 课件资料 | Reference
 * [课程PPT](https://tannin-1316822731.cos.ap-nanjing.myqcloud.com/2025-04-19-2025%E7%A1%AC%E4%BB%B6%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%86%85%E8%AE%AD.pdf)
@@ -65,12 +65,45 @@ Error: Matrix a and b must have the same rows and cols.
 
 ![](https://tannin-1316822731.cos.ap-nanjing.myqcloud.com/2025-04-19-%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%86%85%E8%AE%AD%E4%BD%9C%E4%B8%9A%E6%8F%90%E4%BA%A4.png)
 
-
-案例：
-生成结果：
+# 作业：
+## 内训案例：
+### 生成结果：
 ![image](https://github.com/user-attachments/assets/a1c851ab-5d1c-4b85-a656-8133b19d39e7)
 
-在终端中运行结果：
+### 在终端中运行结果：
 ![image](https://github.com/user-attachments/assets/d15336ac-2b55-405f-b7ff-068536ec86a6)
+
+## 函数题目：
+### add_matrix:
+* 思路:
+![image](https://github.com/user-attachments/assets/76ba9340-3c4a-4687-bd64-787ca897ca99)
+
+### sub_matrix:
+![image](https://github.com/user-attachments/assets/8090287f-5f98-4fca-b3b9-ff548360a7b0)
+
+### mul_matrix:
+![image](https://github.com/user-attachments/assets/e4fb49b5-5768-492e-b81a-b925d28b8b32)
+
+### scale_matrix:
+![image](https://github.com/user-attachments/assets/156ad9c2-eeec-4c3c-978d-81a9e49e6b89)
+
+### transpose_matrix:
+![image](https://github.com/user-attachments/assets/3f73f918-1141-4c17-b7c3-cbaadfda256e)
+
+### trace_matrix:
+![image](https://github.com/user-attachments/assets/8430ca28-5c1a-4c80-8992-74f4af5d6e4d)
+
+### det_matrix:
+![image](https://github.com/user-attachments/assets/2ba4728a-8b41-4ebf-bf68-5a609bc04b21)
+
+### inv_matrix:
+![image](https://github.com/user-attachments/assets/769f4eb1-214c-4e3b-b99b-d3aa2af50f3e)
+
+### rank_matrix:
+![image](https://github.com/user-attachments/assets/401804dd-f972-4468-ac31-ae7e51f9e105)
+
+
+
+
 
 

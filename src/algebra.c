@@ -6,11 +6,12 @@
 Matrix create_matrix(int row, int col)
 {
     Matrix m;
+    int i,j;
     m.rows = row;
     m.cols = col;
-    for (int i=0;i<row;i++){
-        for (int j=0;j<col;j++){
-            m.data[i][j]=0;
+    for (int i=0; i<row; i++) {
+        for (int j=0; j<col; j++){
+            m.data[i][j] = 0;
         }
     }
     return m;
@@ -18,17 +19,18 @@ Matrix create_matrix(int row, int col)
 
 Matrix add_matrix(Matrix a, Matrix b)
 {
-    if (a.rows !=b.rows || a.cols!=b.cols){
-        printf("Error : Matrix a and b must have the same rows and cols.\n");
-    return create_matrix(0, 0);
+    if (a.rows != b.rows || a.cols != b.cols) {
+        printf("Error: Matrix a and b must have the same rows and cols.\n");
+        return create_matrix(0, 0);
     }
-    Matrix result = create_matrix(a.rows, a.cols);
+
+    Matrix result = create_matrix(a.rows,a.cols);
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.cols; j++) {
             result.data[i][j] = a.data[i][j] + b.data[i][j];
         }
     }
-    return result;
+    return result;   
 }
 
 Matrix sub_matrix(Matrix a, Matrix b)
@@ -60,7 +62,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
             }
         }
     }
-    return result; 
+    return result;
 }
 
 Matrix scale_matrix(Matrix a, double k)
@@ -129,6 +131,7 @@ double det_matrix(Matrix a)
         }
         det *= temp.data[i][i];
     }
+    
     return det;
 }
 
@@ -176,12 +179,13 @@ Matrix inv_matrix(Matrix a)
             inv.data[i][j] = adj.data[i][j] / det;
         }
     }
+    
     return inv;
 }
 
 int rank_matrix(Matrix a)
 {
-   int rank = 0;
+int rank = 0;
     Matrix temp = create_matrix(a.rows, a.cols);
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.cols; j++) {
@@ -216,12 +220,13 @@ int rank_matrix(Matrix a)
         }
         rank++;
     }
+    
     return rank;
 }
 
 double trace_matrix(Matrix a)
 {
-    if (a.rows != a.cols) {
+if (a.rows != a.cols) {
         printf("Error: The matrix must be a square matrix.\n");
         return 0;
     }
